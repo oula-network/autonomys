@@ -14,7 +14,7 @@ Autonomys-farmer 包含以下組件：
 
 目前所有的集群管理都是基於 nats 來做的, 但是 cache 的具體數據傳輸是通過 TCP 做 p2p 傳輸。
 
-![image.png](./arch.png)
+![arch.png](./images/arch.png)
 
 ## 軟件和硬件環境建議配置
 
