@@ -109,7 +109,7 @@ stdout_logfile=/var/log/autonomys-controller.log
 # /etc/supervisor/conf.d/autonomys-node.conf
 
 [program:autonomys-node]
-command=/root/autonomys/autonomys-node run --base-path /var/autonomys-node --farmer --rpc-listen-on 0.0.0.0:9944 --chain taurus --sync full --rpc-methods unsafe --rpc-cors all
+command=/root/autonomys/autonomys-node run --base-path /var/autonomys-node --farmer --rpc-listen-on 0.0.0.0:9944 --chain mainnet --sync full --rpc-methods unsafe --rpc-cors all
 autorestart=true
 user=root
 redirect_stderr=true
