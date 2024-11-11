@@ -167,7 +167,7 @@ stdout_logfile=/var/log/autonomys-sharded-cache.log
 # /etc/supervisor/conf.d/autonomys-full-piece.conf
 
 [program:autonomys-full-piece]
-command=/root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 full-piece-sharded-cache --tmp path=/var/autonomys-full-piece
+command=/root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 full-piece-sharded-cache  path=/var/autonomys-full-piece
 autorestart=true
 user=root
 redirect_stderr=true
