@@ -34,7 +34,7 @@ Autonomys-farmer 包含以下組件：
 | 類別 | CPU | 內存 | GPU | SSD | 網絡 | 運行組件 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 節點機 | 64核 | 64G/128G | 需要 | 500GiB | 千兆網卡 | `controller` `autonomys-node` `proof-server` `nats-server`  |
-| P 盤機 | 每個GPU需要30核 | 每個GPU需要 64 G | 需要 | 20GiB 用於緩存 plot 數據 | 萬兆網卡*2 | `plot-server` `sharded-cache` `full-piece-cache` |
+| P 盤機 | 每個GPU需要30核 | 每個GPU需要 64 G | 需要 | 200GiB 用於緩存 plot 數據 | 萬兆網卡*2 | `plot-server` `sharded-cache` `full-piece-cache` |
 | 存儲機 | 取決於存儲容量 | 取決於存儲容量 | 不需要 | 取決於存儲容量 | 萬兆網卡*2 | `plot-client` |
 
 ## 最佳實踐
