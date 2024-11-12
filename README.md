@@ -334,5 +334,5 @@ NODE_URL="http://192.168.1.1:9944" ./autonomys-export-piece
 
 ### 快速下載node數據
 
-可從百度網盤下載node資料，檔案名稱：node-db.tar.gz。
+可從百度網盤下載node資料，檔案名稱：node-db.tar.gz。數據直到新加坡時間的2024年11月12號23點。所以下載數據並解壓縮後，還是需要同步最新的node數據，但會快很多。
 連結: https://pan.baidu.com/s/105H1EOrnfA9hcpcU265RcA 提取碼: 67nq
