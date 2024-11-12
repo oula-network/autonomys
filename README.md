@@ -331,3 +331,8 @@ NODE_URL="http://192.168.1.1:9944" ./autonomys-export-piece
 ```shell
 ./autonomys-farmer util verify-piece --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222
 ```
+
+### 快速下載node數據
+
+可從百度網盤下載node資料，檔案名稱：node-db.tar.gz。
+連結: https://pan.baidu.com/s/105H1EOrnfA9hcpcU265RcA 提取碼: 67nq
