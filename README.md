@@ -312,7 +312,7 @@ sharded-cache-benchmark \
     --cache-item-type split-parity-piece
 ```
 
-### Autonomys Piece轉換工具
+### Autonomys Piece 轉換工具
 
 可以把 autonomys-node 同步後的資料轉換成 piece 快取資料。
 
@@ -326,3 +326,8 @@ NODE_URL="http://192.168.1.1:9944" ./autonomys-export-piece
 
 **注意: NODE_URL 指定的 autonomys-node 的啟動指令必須新增 `--sync=full --blocks-pruning=archive` 參數** 
 
+### Autonomys piece 驗證工具
+
+```shell
+./autonomys-farmer util verify-piece --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222
+```
