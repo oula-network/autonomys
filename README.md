@@ -324,5 +324,5 @@ NODE_URL="http://192.168.1.1:9944" ./autonomys-export-piece
 
 運行後，產生的piece資料會自動儲存到本機目錄的 `full-cache-tmp` 資料夾下。然後，直接將 `autonomys-full-piece` 組件的 `path` 參數指定到該目錄即可。
 
-**注意: NODE_URL 指定的 autonomys-node 的啟動指令必須新增 `--sync=full` 參數** 
+**注意: NODE_URL 指定的 autonomys-node 的啟動指令必須新增 `--sync=full --blocks-pruning=archive` 參數** 
 
