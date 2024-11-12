@@ -314,12 +314,15 @@ sharded-cache-benchmark \
 
 ### Autonomys Piece轉換工具
 
-可以把Node同步後的資料轉換成Piece 快取資料。
+可以把 autonomys-node 同步後的資料轉換成 piece 快取資料。
 
-在full node同一台機器上面，使用以下指令：
+使用以下指令導出 piece 快取資料:
 
 ```shell
-NODE_URL="http://127.0.0.1:9944" ./autonomys-export-piece
+NODE_URL="http://192.168.1.1:9944" ./autonomys-export-piece
 ```
 
-運行後，產生的piece資料會自動儲存到本機目錄的`full-cache-tmp`資料夾下, 然後，直接將full cache的path指定到該目錄即可。
+運行後，產生的piece資料會自動儲存到本機目錄的 `full-cache-tmp` 資料夾下。然後，直接將 `autonomys-full-piece` 組件的 `path` 參數指定到該目錄即可。
+
+**注意: NODE_URL 指定的 autonomys-node 的啟動指令必須新增 `--sync=full` 參數** 
+
