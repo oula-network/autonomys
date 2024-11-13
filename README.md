@@ -329,7 +329,7 @@ NODE_URL="http://192.168.1.1:9944" ./autonomys-export-piece
 ### Autonomys piece 驗證工具
 
 ```shell
-./autonomys-farmer util verify-piece --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222
+./autonomys-farmer util verify-piece --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.3:4222
 ```
 
 ### 快速下載node數據
