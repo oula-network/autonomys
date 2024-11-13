@@ -188,7 +188,7 @@ stdout_logfile=/var/log/autonomys-full-piece.log
 [group:autonomys-plot-server]
 programs=autonomys-plot-server-0,autonomys-plot-server-1,autonomys-plot-server-2,autonomys-plot-server-3
 [program:autonomys-plot-server-0]
-command=numactl -C 0-31 -l /root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 plot-server --priority-cache --listen-port 9966 /var/plot-server/base-path-0
+command=numactl -C 0-31 -l /root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 plot-server --record-encoding-concurrency 32 --priority-cache --listen-port 9966 /var/plot-server/base-path-0
 autorestart=true
 user=root
 environment=CUDA_VISIBLE_DEVICES=0
@@ -198,7 +198,7 @@ stdout_logfile_backups=2
 stdout_logfile=/var/log/autonomys-plotter-0.log
 
 [program:autonomys-plot-server-1]
-command=numactl -C 96-127 -l /root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 plot-server --priority-cache --listen-port 9967 /var/plot-server/base-path-1
+command=numactl -C 96-127 -l /root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 plot-server --record-encoding-concurrency 32 --priority-cache --listen-port 9967 /var/plot-server/base-path-1
 autorestart=true
 user=root
 environment=CUDA_VISIBLE_DEVICES=1
@@ -208,7 +208,7 @@ stdout_logfile_backups=2
 stdout_logfile=/var/log/autonomys-plotter-1.log
 
 [program:autonomys-plot-server-2]
-command=numactl -C 96-127 -l /root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 plot-server --priority-cache --listen-port 9968 /var/plot-server/base-path-2
+command=numactl -C 96-127 -l /root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 plot-server --record-encoding-concurrency 32 --priority-cache --listen-port 9968 /var/plot-server/base-path-2
 autorestart=true
 user=root
 environment=CUDA_VISIBLE_DEVICES=2
@@ -218,7 +218,7 @@ stdout_logfile_backups=2
 stdout_logfile=/var/log/autonomys-plotter-2.log
 
 [program:autonomys-plot-server-3]
-command=numactl -C 144-175 -l /root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 plot-server --priority-cache --listen-port 9969 /var/plot-server/base-path-3
+command=numactl -C 144-175 -l /root/autonomys/autonomys-farmer cluster --nats-server nats://192.168.1.1:4222 --nats-server nats://192.168.1.2:4222 --nats-server nats://192.168.1.2:4222 plot-server --record-encoding-concurrency 32 --priority-cache --listen-port 9969 /var/plot-server/base-path-3
 autorestart=true
 user=root
 environment=CUDA_VISIBLE_DEVICES=3
