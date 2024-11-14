@@ -53,6 +53,14 @@ Autonomys-farmer 包含以下組件：
 | 存儲機1 | 192.168.1.6 | 8T NVMe*4 `/mnt/nvme0n1` `/mnt/nvme0n2` `/mnt/nvme1n2` `/mnt/nvme1n1` | `autonomys-plot-client` |
 | 存儲機2 | 192.168.1.7 | 8T NVMe*4 `/mnt/nvme0n1` `/mnt/nvme0n2` `/mnt/nvme1n1` `/mnt/nvme1n2` | `autonomys-plot-client` |
 
+### 啟動整個集群
+
+根據下面的教學設定好Supervisor的參數配置，透過呼叫下面的一條指令就可以啟動程式。
+
+```shell
+supervisorctl start all
+```
+
 ### Supervisor 配置
 
 ### **節點機配置**
