@@ -55,7 +55,7 @@ Autonomys-farmer 包含以下組件：
 
 ### 啟動整個集群
 
-根據下面的教學設定好Supervisor的參數配置，透過呼叫下面的一條指令就可以啟動程式。
+先把nats啟動以後，根據下面的教學設定好Supervisor的參數配置，透過呼叫下面的一條指令就可以啟動程式。
 
 ```shell
 supervisorctl start all
